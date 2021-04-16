@@ -1,13 +1,10 @@
 {
 	"extends": [
-		"@abhijithvijayan/eslint-config/typescript",
+		"@abhijithvijayan/eslint-config",
 		"@abhijithvijayan/eslint-config/node",
 		"@abhijithvijayan/eslint-config/react"
 	],
 	"parserOptions": {
-		"project": [
-			"./tsconfig.json"
-		],
 		"sourceType": "module"
 	},
 	"rules": {
@@ -17,6 +14,7 @@
 		"jsx-a11y/label-has-associated-control": "off",
 		"class-methods-use-this": "off",
 		"max-classes-per-file": "off",
+		"node/no-unpublished-require": "off",
 		"node/no-missing-import": "off",
 		"node/no-unpublished-import": "off",
 		"node/no-unsupported-features/es-syntax": ["error", {
@@ -25,10 +23,5 @@
 	},
 	"env": {
 		"webextensions": true
-	},
-	"settings": {
-		"node": {
-			"tryExtensions": [".tsx"] // append tsx to the list as well
-		}
 	}
 }

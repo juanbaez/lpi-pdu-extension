@@ -15,7 +15,6 @@
         }
       }
     ],
-    "@babel/typescript",
     "@babel/react"
   ],
   "plugins": [
